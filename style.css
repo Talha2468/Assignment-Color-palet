@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(60, 64, 198);
+    background-image: url(https://flatuicolors.com/static/img/stars-opacity.0979c1.svg);
+    font-family: barlow;
+}
+.main-page{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.top-line{
+    display: flex;
+    width: 76vw;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 105px;
+    font-family: barlow;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+.top-rigth{
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+    font-family: barlow;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;  
+    letter-spacing: 1px; 
+}
+.a:hover,.b:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.color-palets{
+    width: 77vw;
+/* background-color: blue; */
+    display: flex;
+    row-gap: 30px;
+    column-gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.palet{
+    width: 287.188px;
+    height: 210px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    padding-bottom: 15px;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+.palet-bottom{
+    margin-top: -9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.palet-bottom p{
+    font-weight: 600;
+}
+@media screen and (min-width:2560px) {
+    .top-line{
+        width: 40vw;
+    }
+    .top-rigth{
+        width: 16vw;
+        font-size: 1.4em;
+    }
+    .color-palets{
+        width: 50vw;
+    }
+    .main-page{
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .color-palets{
+        width: 700px;
+        /* background-color: rgb(226, 43, 43); */
+        align-items: center;
+    }
+}
+@media screen and (max-width: 425px) {
+    .top-line{
+        flex-wrap: wrap;
+        margin: 2px;
+    }
+    .color-palets{
+        padding: 70px;
+        width: 20vw;
+        /* background-color: rgb(226, 43, 43); */
+        justify-content: center;
+    }
+    }
